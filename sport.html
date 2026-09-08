@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Спортивные трансляции — Irish Papa's Pub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="mobile-nav-fab">
+  <button class="mobile-nav-fab-btn" aria-label="Меню навигации">
+    <svg class="mobile-nav-fab-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    <svg class="mobile-nav-fab-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    <span class="mobile-nav-fab-btn-text">Меню</span>
+  </button>
+  <nav class="mobile-nav-fab-menu">
+    <a href="menu.html">Меню</a>
+    <a href="about.html">О нас</a>
+    <a href="sport.html" class="active">Спортивные трансляции</a>
+    <a href="loyalty.html">Клуб друзей</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</div>
+
+<body>
+<div class="page-haze"></div> <!-- дымка сверху -->
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="images/logo.svg" alt="Irish Papa's Pub" class="header-logo-img">
+      <div class="logo-text">
+        <a href="index.html" class="logo-name"><span>O'</span> Roman<span>'s</span> Pub</a>
+        <span class="logo-address">ул. Тельмана, 2</span>
+      </div>
+    </div>
+    <nav>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="sport.html">Спортивные трансляции</a>
+      <a href="loyalty.html">Клуб друзей</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+79372255002" class="btn restoplace-click-open">Забронировать стол</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="sport-hero">
+    <div class="sport-hero-eyebrow">На большом экране</div>
+    <h1>Спортивные трансляции</h1>
+    <p>Показываем РПЛ, еврокубки, английскую и испанскую лиги. Приходите за атмосферой настоящего матча — с пинтой и бургером.</p>
+  </section>
+
+  <section class="sport-hero-photo" data-reveal>
+    <img src="https://images.unsplash.com/photo-1671368913134-c211bc02487f?w=1200&q=80" alt="Трансляция матча в пабе">
+  </section>
+
+  <!-- Афиша трансляций -->
+  <section class="afisha">
+    <div class="afisha-head">
+      <div class="afisha-head-eyebrow">Расписание трансляций</div>
+      <h2>Афиша</h2>
+    </div>
+
+    <!-- Переключатель дат -->
+    <div class="date-strip">
+      <button class="date-chip" data-date="4"><span class="dow">ПТ</span><span class="dnum">4</span><span class="today-dot"></span></button>
+      <button class="date-chip" data-date="5"><span class="dow">СБ</span><span class="dnum">5</span><span class="today-dot"></span></button>
+    </div>
+
+    <!-- Список матчей -->
+    <div class="match-list">
+
+      <div class="match-row" data-reveal data-date="4" data-time="20:25" data-duration="120" data-score="0:0" style="display:none;">
+        <div class="match-sport-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V3h16v16" stroke-opacity="0.4"/><path d="M4 8h4M4 13h4M20 8h-4M20 13h-4M8 3v16M16 3v16" stroke-opacity="0.22" stroke-width="1"/><line x1="2" y1="19" x2="22" y2="19" stroke-opacity="0.4"/><circle cx="12" cy="15" r="4.2" stroke-width="1.6"/><path d="M12 11.8l1.3 1-.5 1.5h-1.6l-.5-1.5 1.3-1zM8.8 15.3l1-.9M15.7 15.3l-1 .9M9.9 17.8l.6-1.6M14.1 17.8l-.6-1.6" stroke-width="1.1"/></svg></div>
+        <div class="match-info">
+          <div class="match-league">Футбол. Лига Pari</div>
+          <div class="match-teams">Текстильщик <span class="vs">vs</span> Торпедо</div>
+        </div>
+        <div class="match-time">20:25<span class="time-label">Вечер</span></div>
+      </div>
+
+      <div class="match-row" data-reveal data-date="4" data-time="22:50" data-duration="120" data-score="0:0" style="display:none;">
+        <div class="match-sport-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V3h16v16" stroke-opacity="0.4"/><path d="M4 8h4M4 13h4M20 8h-4M20 13h-4M8 3v16M16 3v16" stroke-opacity="0.22" stroke-width="1"/><line x1="2" y1="19" x2="22" y2="19" stroke-opacity="0.4"/><circle cx="12" cy="15" r="4.2" stroke-width="1.6"/><path d="M12 11.8l1.3 1-.5 1.5h-1.6l-.5-1.5 1.3-1zM8.8 15.3l1-.9M15.7 15.3l-1 .9M9.9 17.8l.6-1.6M14.1 17.8l-.6-1.6" stroke-width="1.1"/></svg></div>
+        <div class="match-info">
+          <div class="match-league">Футбол. Чемпионат Испании</div>
+          <div class="match-teams">Бетис <span class="vs">vs</span> Реал</div>
+        </div>
+        <div class="match-time">22:50<span class="time-label">Ночь</span></div>
+      </div>
+
+      <div class="match-row" data-reveal data-date="5" data-time="19:00" data-duration="120" data-score="0:0" style="display:none;">
+        <div class="match-sport-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V3h16v16" stroke-opacity="0.4"/><path d="M4 8h4M4 13h4M20 8h-4M20 13h-4M8 3v16M16 3v16" stroke-opacity="0.22" stroke-width="1"/><line x1="2" y1="19" x2="22" y2="19" stroke-opacity="0.4"/><circle cx="12" cy="15" r="4.2" stroke-width="1.6"/><path d="M12 11.8l1.3 1-.5 1.5h-1.6l-.5-1.5 1.3-1zM8.8 15.3l1-.9M15.7 15.3l-1 .9M9.9 17.8l.6-1.6M14.1 17.8l-.6-1.6" stroke-width="1.1"/></svg></div>
+        <div class="match-info">
+          <div class="match-league">Футбол. Российская Премьер-Лига</div>
+          <div class="match-teams">Динамо <span class="vs">vs</span> Спартак</div>
+        </div>
+        <div class="match-time">19:00<span class="time-label">Вечер</span></div>
+      </div>
+
+      <div class="match-row" data-reveal data-date="5" data-time="21:40" data-duration="120" data-score="0:0" style="display:none;">
+        <div class="match-sport-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V3h16v16" stroke-opacity="0.4"/><path d="M4 8h4M4 13h4M20 8h-4M20 13h-4M8 3v16M16 3v16" stroke-opacity="0.22" stroke-width="1"/><line x1="2" y1="19" x2="22" y2="19" stroke-opacity="0.4"/><circle cx="12" cy="15" r="4.2" stroke-width="1.6"/><path d="M12 11.8l1.3 1-.5 1.5h-1.6l-.5-1.5 1.3-1zM8.8 15.3l1-.9M15.7 15.3l-1 .9M9.9 17.8l.6-1.6M14.1 17.8l-.6-1.6" stroke-width="1.1"/></svg></div>
+        <div class="match-info">
+          <div class="match-league">Футбол. Российская Премьер-Лига</div>
+          <div class="match-teams">Ростов <span class="vs">vs</span> Факел</div>
+        </div>
+        <div class="match-time">21:40<span class="time-label">Вечер</span></div>
+      </div>
+
+      <div class="match-row" data-reveal data-date="5" data-time="19:50" data-duration="120" data-score="0:0" style="display:none;">
+        <div class="match-sport-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V3h16v16" stroke-opacity="0.4"/><path d="M4 8h4M4 13h4M20 8h-4M20 13h-4M8 3v16M16 3v16" stroke-opacity="0.22" stroke-width="1"/><line x1="2" y1="19" x2="22" y2="19" stroke-opacity="0.4"/><circle cx="12" cy="15" r="4.2" stroke-width="1.6"/><path d="M12 11.8l1.3 1-.5 1.5h-1.6l-.5-1.5 1.3-1zM8.8 15.3l1-.9M15.7 15.3l-1 .9M9.9 17.8l.6-1.6M14.1 17.8l-.6-1.6" stroke-width="1.1"/></svg></div>
+        <div class="match-info">
+          <div class="match-league">Футбол. Чемпионат Испании</div>
+          <div class="match-teams">Интер <span class="vs">vs</span> Наполи</div>
+        </div>
+        <div class="match-time">19:50<span class="time-label">Вечер</span></div>
+      </div>
+
+    </div>
+
+    <p class="afisha-note">Звук на телетрансляциях включается на усмотрение администратора.</p>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="footer-logo-block">
+        <img src="images/logo.svg" alt="O'Roman's Pub" class="footer-logo-img">
+        <div>
+          <div class="footer-logo"><span>O'</span> Roman<span>'s</span> Pub</div>
+          <span class="footer-logo-address">ул. Тельмана, 2</span>
+        </div>
+      </a>
+      <p class="footer-desc">Культовый ирландский паб в центре Энгельса. Открыты с 2004 года. Европейская кухня, крафтовое пиво, живая атмосфера.</p>
+      <div class="footer-social">
+        <a href=" https://#" aria-label="VK">VK</a>
+        <a href=" https://#" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="sport.html">Спортивные трансляции</a></li>
+        <li><a href="loyalty.html">Клуб друзей</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">VK</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">Telegram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Часы работы</h4>
+      <ul style="color: var(--text-dim); font-size: 14px;">
+        <li>пн–чт: 16:00–02:00</li>
+        <li>пт–сб: 14:00–03:00</li>
+        <li>вс: 14:00–02:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© O'Roman's Pub, Энгельс</span>
+    
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

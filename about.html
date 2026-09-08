@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О нас — O'Roman's Pub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-haze"></div> <!-- световая дымка -->
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="images/logo.svg" alt="O'Roman's Pub" class="header-logo-img">
+      <div class="logo-text">
+        <a href="index.html" class="logo-name"><span>O'</span> Roman<span>'s</span> Pub</a>
+        <span class="logo-address">ул. Тельмана, 2</span>
+      </div>
+    </div>
+    <nav>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="sport.html">Спортивные трансляции</a>
+      <a href="loyalty.html">Клуб друзей</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+70000000000" class="btn restoplace-click-open">Забронировать стол</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-fab">
+  <button class="mobile-nav-fab-btn" aria-label="Меню навигации">
+    <svg class="mobile-nav-fab-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    <svg class="mobile-nav-fab-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    <span class="mobile-nav-fab-btn-text">Меню</span>
+  </button>
+  <nav class="mobile-nav-fab-menu">
+    <a href="menu.html">Меню</a>
+    <a href="about.html" class="active">О нас</a>
+    <a href="sport.html">Спортивные трансляции</a>
+    <a href="loyalty.html">Клуб друзей</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="about-hero">
+    <div class="about-hero-eyebrow">С 2004 года</div>
+    <h1>Двадцать лет на Столыпина</h1>
+    <p>От первой пинты до Papa's Party — история паба, который стал культовым местом Энгельса.</p>
+  </section>
+
+  <section class="story">
+    <div class="story-img" data-reveal id="parallaxImg1">
+      <img src="images/about/interior-1.jpg" alt="Интерьер паба">
+    </div>
+    <div class="story-text" data-reveal>
+      <div class="story-eyebrow">Начало</div>
+      <h2>Как всё начиналось</h2>
+      <p class="drop-cap">В 2004 году в Энгелье открылся «Roman`S», это культовый ирландский паб, который стал настоящей легендой Энгельса. Открыв свои двери, он смог сохранить неповторимый колорит и непревзойденный стиль на протяжении двух десятилетий.</p>
+      <p>За 20 лет паб стал культовым. Здесь отмечают дни рождения, смотрят футбол, встречаются друзья и заводят новые знакомства. Мы сохранили то, с чего начинали — тёплую стойку, честную кухню и отношение к гостю как к другу.</p>
+      <div class="stats-row">
+        <div class="stat-item"><span class="stat-num">20+</span><span class="stat-label">Лет в Энгельсе</span></div>
+        <div class="stat-item"><span class="stat-num">15 м</span><span class="stat-label">Барная стойка</span></div>
+        <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">Мест в VIP-зале</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courtyard-block">
+    <div>
+      <div class="courtyard-eyebrow">Летний сезон</div>
+      <h2>Дворик-колодец</h2>
+      <p>За стенами паба скрывается наш внутренний дворик-колодец — особенность старой Энгельсской застройки. С мая по октябрь он превращается в летнее кафе под открытым небом.</p>
+      <p>Каменные стены держат прохладу в жару и уют в прохладные вечера. Лампы, зелень, деревянная мебель — здесь можно сидеть до последнего гостя с бокалом вина или пинтой лагера.</p>
+      <div class="season-badge">Сезон: май — октябрь
+        <span class="open-status" id="seasonStatus"><span class="status-dot"></span><span class="status-text">—</span></span>
+      </div>
+    </div>
+    <div class="story-img" data-reveal>
+      <img src="images/about/courtyard.jpg" alt="Летний дворик паба">
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <section class="party-block" data-reveal>
+    <div class="party-inner">
+      <div class="party-eyebrow">Не только футбол</div>
+      <h2>O' Roman's Party</h2>
+      <p>Домашняя атмосфера паба создает ощущение, будто ты находишься в гостях у старого друга. Здесь каждый вечер превращается в уникальное событие: будь то футбольный матч на большой экране, выступление группы или зажигательная дискотека «O' Roman's Party»!</p>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <section class="team">
+    <div class="team-head">
+      <div class="team-head-eyebrow">Взгляд изнутри</div>
+      <h2>Интерьер паба</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card" data-reveal>
+        <img src="images/about/interior-3.jpg" alt="Интерьер паба" loading="lazy">
+      </div>
+      <div class="team-card" data-reveal>
+        <img src="images/about/interior-2.jpg" alt="Интерьер паба" loading="lazy">
+      </div>
+      <div class="team-card" data-reveal>
+        <img src="images/about/interior-4.jpg" alt="Интерьер паба" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <section class="map-block">
+    <div class="map-inner" data-reveal>
+      <div>
+        <h3>Хотите заглянуть в гости?</h3>
+        <p>Адрес, карта проезда и часы работы — на странице контактов</p>
+      </div>
+      <a href="contacts.html" class="btn btn-outline">Контакты и карта</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="footer-logo-block">
+        <img src="images/logo.svg" alt="O'Roman's Pub" class="footer-logo-img">
+        <div>
+          <div class="footer-logo"><span>O'</span> Roman<span>'s</span> Pub</div>
+          <span class="footer-logo-address">ул. Тельмана, 2</span>
+        </div>
+      </a>
+      <p class="footer-desc">Культовый ирландский паб в центре Энгельса. Открыты с 2004 года. Европейская кухня, крафтовое пиво, живая атмосфера.</p>
+      <div class="footer-social">
+        <a href=" https://#" aria-label="VK">VK</a>
+        <a href=" https://#" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="sport.html">Спортивные трансляции</a></li>
+        <li><a href="loyalty.html">Клуб друзей</a></li>
+        <li><a href="contacts.html">Контакты</a></li> 
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">VK</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">Telegram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Часы работы</h4>
+      <ul style="color: var(--text-dim); font-size: 14px;">
+        <li>пн–чт: 16:00–02:00</li>
+        <li>пт–сб: 14:00–03:00</li>
+        <li>вс: 14:00–02:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© O'Roman's Pub, Энгельс</span>
+    
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

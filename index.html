@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O'Roman's Pub — Энгельс</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-haze"></div> <!-- световая дымка -->
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="images/logo.svg" alt="O'Roman's Pub" class="header-logo-img">
+      <div class="logo-text">
+        <a href="index.html" class="logo-name"><span>O'</span> Roman<span>'s</span> Pub</a>
+        <span class="logo-address">ул. Тельмана, 2</span>
+      </div>
+    </div>
+    <nav>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="sport.html">Спортивные трансляции</a>
+      <a href="loyalty.html">Клуб друзей</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+70000000000" class="btn restoplace-click-open">Забронировать стол</a>
+    </div>
+  </div>
+</header>
+
+<!-- Плавающая кнопка -->
+<div class="mobile-nav-fab">
+  <button class="mobile-nav-fab-btn" aria-label="Меню навигации">
+    <svg class="mobile-nav-fab-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    <svg class="mobile-nav-fab-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    <span class="mobile-nav-fab-btn-text">Меню</span>
+  </button>
+  <nav class="mobile-nav-fab-menu">
+    <a href="menu.html">Меню</a>
+    <a href="about.html">О нас</a>
+    <a href="sport.html">Спортивные трансляции</a>
+    <a href="loyalty.html">Клуб друзей</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</div>
+
+  <section class="hero" style="background-image:url('images/hero-bg.jpg')">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Saratov · Since 2004</div>
+      <h1>Культовый ирландский паб на Тельмана 2</h1>
+      <p class="hero-sub">Более двадцати лет держим марку: 15 метров тёплой барной стойки, VIP-зал на 20 персон и внутренний дворик-колодец. Стейки, брискет и собственное пиво — под спортивные трансляции и живую музыку.</p>
+      <div class="hero-cta">
+        <a href="tel:+70000000000" class="btn restoplace-click-open">Забронировать стол</a>
+        <a href="sport.html" class="btn btn-outline">Посмотреть сегодняшние трансляции</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="counter-hint">
+    <div class="counter-hint-eyebrow">Интерактивная стойка</div>
+    <h3 class="counter-hint-title">Наведите курсор на стойку</h3>
+    <p class="counter-hint-desc">Каждый предмет на барной стойке ведёт в свой раздел меню — выберите то, с чего начнёте вечер.</p>
+  </section>
+
+  <!-- Интерактивная барная стойка -->
+  <section class="counter-section" id="counter">
+    <div class="counter-photo-wrap">
+      <svg class="counter-illustration" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Барная стойка O'Roman's Pub">
+        <defs>
+          <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1c150e"/>
+            <stop offset="100%" stop-color="#120d08"/>
+          </linearGradient>
+          <linearGradient id="shelfGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4a3520"/>
+            <stop offset="100%" stop-color="#2e2113"/>
+          </linearGradient>
+          <linearGradient id="brassGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f2dca0"/>
+            <stop offset="35%" stop-color="#c9a24b"/>
+            <stop offset="100%" stop-color="#8a6a30"/>
+          </linearGradient>
+          <linearGradient id="woodTop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#5a4128"/>
+            <stop offset="100%" stop-color="#3a2a18"/>
+          </linearGradient>
+          <linearGradient id="woodFront" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#382a1a"/>
+            <stop offset="100%" stop-color="#170f09"/>
+          </linearGradient>
+          <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe3a3" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#ffe3a3" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="vignette" cx="50%" cy="38%" r="75%">
+            <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+          </radialGradient>
+        </defs>
+
+        <rect x="0" y="0" width="1600" height="410" fill="url(#wallGrad)"/>
+
+        <rect x="0" y="150" width="1600" height="90" fill="url(#shelfGrad)"/>
+        <rect x="0" y="150" width="1600" height="6" fill="#000" opacity="0.3"/>
+        <rect x="0" y="235" width="1600" height="90" fill="url(#shelfGrad)" opacity="0.85"/>
+        <rect x="0" y="235" width="1600" height="6" fill="#000" opacity="0.25"/>
+
+        <g opacity="0.92">
+          <rect x="40" y="76" width="21" height="69" rx="3" fill="#3d6b4a"/>
+          <rect x="42" y="66" width="17" height="12" rx="2" fill="#2e5138"/>
+          <rect x="40" y="76" width="7" height="69" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="73" y="74" width="21" height="71" rx="3" fill="#7a2e2e"/>
+          <rect x="75" y="64" width="17" height="12" rx="2" fill="#5c2222"/>
+          <rect x="73" y="74" width="7" height="71" fill="#a15252" opacity="0.4"/>
+          <rect x="105" y="66" width="19" height="79" rx="3" fill="#7a2e2e"/>
+          <rect x="107" y="56" width="15" height="12" rx="2" fill="#5c2222"/>
+          <rect x="105" y="66" width="6" height="79" fill="#a15252" opacity="0.4"/>
+          <rect x="136" y="72" width="20" height="73" rx="3" fill="#a3843a"/>
+          <rect x="138" y="62" width="16" height="12" rx="2" fill="#7a6228"/>
+          <rect x="136" y="72" width="6" height="73" fill="#c9a860" opacity="0.4"/>
+          <rect x="172" y="68" width="22" height="77" rx="3" fill="#a3843a"/>
+          <rect x="174" y="58" width="18" height="12" rx="2" fill="#7a6228"/>
+          <rect x="172" y="68" width="7" height="77" fill="#c9a860" opacity="0.4"/>
+          <rect x="209" y="80" width="16" height="65" rx="3" fill="#7a2e2e"/>
+          <rect x="211" y="70" width="12" height="12" rx="2" fill="#5c2222"/>
+          <rect x="209" y="80" width="5" height="65" fill="#a15252" opacity="0.4"/>
+          <rect x="241" y="73" width="17" height="72" rx="3" fill="#3d6b4a"/>
+          <rect x="243" y="63" width="13" height="12" rx="2" fill="#2e5138"/>
+          <rect x="241" y="73" width="5" height="72" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="273" y="69" width="22" height="76" rx="3" fill="#8a5a2a"/>
+          <rect x="275" y="59" width="18" height="12" rx="2" fill="#6b4520"/>
+          <rect x="273" y="69" width="7" height="76" fill="#b0824f" opacity="0.4"/>
+          <rect x="311" y="61" width="19" height="84" rx="3" fill="#8a5a2a"/>
+          <rect x="313" y="51" width="15" height="12" rx="2" fill="#6b4520"/>
+          <rect x="311" y="61" width="6" height="84" fill="#b0824f" opacity="0.4"/>
+          <rect x="346" y="80" width="19" height="65" rx="3" fill="#a3843a"/>
+          <rect x="348" y="70" width="15" height="12" rx="2" fill="#7a6228"/>
+          <rect x="346" y="80" width="6" height="65" fill="#c9a860" opacity="0.4"/>
+          <rect x="378" y="67" width="16" height="78" rx="3" fill="#3d6b4a"/>
+          <rect x="380" y="57" width="12" height="12" rx="2" fill="#2e5138"/>
+          <rect x="378" y="67" width="5" height="78" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="411" y="80" width="18" height="65" rx="3" fill="#3d6b4a"/>
+          <rect x="413" y="70" width="14" height="12" rx="2" fill="#2e5138"/>
+          <rect x="411" y="80" width="6" height="65" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="446" y="69" width="20" height="76" rx="3" fill="#3d6b4a"/>
+          <rect x="448" y="59" width="16" height="12" rx="2" fill="#2e5138"/>
+          <rect x="446" y="69" width="6" height="76" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="478" y="65" width="21" height="80" rx="3" fill="#a3843a"/>
+          <rect x="480" y="55" width="17" height="12" rx="2" fill="#7a6228"/>
+          <rect x="478" y="65" width="7" height="80" fill="#c9a860" opacity="0.4"/>
+          <rect x="509" y="66" width="19" height="79" rx="3" fill="#3d6b4a"/>
+          <rect x="511" y="56" width="15" height="12" rx="2" fill="#2e5138"/>
+          <rect x="509" y="66" width="6" height="79" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="545" y="69" width="21" height="76" rx="3" fill="#3d5a86"/>
+          <rect x="547" y="59" width="17" height="12" rx="2" fill="#2c4363"/>
+          <rect x="545" y="69" width="7" height="76" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="583" y="81" width="22" height="64" rx="3" fill="#8a5a2a"/>
+          <rect x="585" y="71" width="18" height="12" rx="2" fill="#6b4520"/>
+          <rect x="583" y="81" width="7" height="64" fill="#b0824f" opacity="0.4"/>
+          <rect x="615" y="84" width="20" height="61" rx="3" fill="#3d5a86"/>
+          <rect x="617" y="74" width="16" height="12" rx="2" fill="#2c4363"/>
+          <rect x="615" y="84" width="6" height="61" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="650" y="62" width="17" height="83" rx="3" fill="#3d5a86"/>
+          <rect x="652" y="52" width="13" height="12" rx="2" fill="#2c4363"/>
+          <rect x="650" y="62" width="5" height="83" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="682" y="64" width="16" height="81" rx="3" fill="#a3843a"/>
+          <rect x="684" y="54" width="12" height="12" rx="2" fill="#7a6228"/>
+          <rect x="682" y="64" width="5" height="81" fill="#c9a860" opacity="0.4"/>
+          <rect x="717" y="61" width="21" height="84" rx="3" fill="#7a2e2e"/>
+          <rect x="719" y="51" width="17" height="12" rx="2" fill="#5c2222"/>
+          <rect x="717" y="61" width="7" height="84" fill="#a15252" opacity="0.4"/>
+          <rect x="753" y="84" width="19" height="61" rx="3" fill="#7a2e2e"/>
+          <rect x="755" y="74" width="15" height="12" rx="2" fill="#5c2222"/>
+          <rect x="753" y="84" width="6" height="61" fill="#a15252" opacity="0.4"/>
+          <rect x="790" y="61" width="16" height="84" rx="3" fill="#a3843a"/>
+          <rect x="792" y="51" width="12" height="12" rx="2" fill="#7a6228"/>
+          <rect x="790" y="61" width="5" height="84" fill="#c9a860" opacity="0.4"/>
+          <rect x="826" y="65" width="16" height="80" rx="3" fill="#8a5a2a"/>
+          <rect x="828" y="55" width="12" height="12" rx="2" fill="#6b4520"/>
+          <rect x="826" y="65" width="5" height="80" fill="#b0824f" opacity="0.4"/>
+          <rect x="859" y="60" width="18" height="85" rx="3" fill="#a3843a"/>
+          <rect x="861" y="50" width="14" height="12" rx="2" fill="#7a6228"/>
+          <rect x="859" y="60" width="6" height="85" fill="#c9a860" opacity="0.4"/>
+          <rect x="891" y="72" width="19" height="73" rx="3" fill="#a3843a"/>
+          <rect x="893" y="62" width="15" height="12" rx="2" fill="#7a6228"/>
+          <rect x="891" y="72" width="6" height="73" fill="#c9a860" opacity="0.4"/>
+          <rect x="922" y="85" width="16" height="60" rx="3" fill="#8a5a2a"/>
+          <rect x="924" y="75" width="12" height="12" rx="2" fill="#6b4520"/>
+          <rect x="922" y="85" width="5" height="60" fill="#b0824f" opacity="0.4"/>
+          <rect x="954" y="62" width="16" height="83" rx="3" fill="#8a5a2a"/>
+          <rect x="956" y="52" width="12" height="12" rx="2" fill="#6b4520"/>
+          <rect x="954" y="62" width="5" height="83" fill="#b0824f" opacity="0.4"/>
+          <rect x="990" y="63" width="20" height="82" rx="3" fill="#3d6b4a"/>
+          <rect x="992" y="53" width="16" height="12" rx="2" fill="#2e5138"/>
+          <rect x="990" y="63" width="6" height="82" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1028" y="61" width="21" height="84" rx="3" fill="#3d5a86"/>
+          <rect x="1030" y="51" width="17" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1028" y="61" width="7" height="84" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1066" y="73" width="16" height="72" rx="3" fill="#3d5a86"/>
+          <rect x="1068" y="63" width="12" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1066" y="73" width="5" height="72" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1097" y="63" width="17" height="82" rx="3" fill="#3d6b4a"/>
+          <rect x="1099" y="53" width="13" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1097" y="63" width="5" height="82" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1134" y="64" width="20" height="81" rx="3" fill="#8a5a2a"/>
+          <rect x="1136" y="54" width="16" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1134" y="64" width="6" height="81" fill="#b0824f" opacity="0.4"/>
+          <rect x="1171" y="66" width="20" height="79" rx="3" fill="#3d5a86"/>
+          <rect x="1173" y="56" width="16" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1171" y="66" width="6" height="79" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1208" y="73" width="18" height="72" rx="3" fill="#3d5a86"/>
+          <rect x="1210" y="63" width="14" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1208" y="73" width="6" height="72" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1239" y="68" width="17" height="77" rx="3" fill="#8a5a2a"/>
+          <rect x="1241" y="58" width="13" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1239" y="68" width="5" height="77" fill="#b0824f" opacity="0.4"/>
+          <rect x="1273" y="64" width="17" height="81" rx="3" fill="#3d6b4a"/>
+          <rect x="1275" y="54" width="13" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1273" y="64" width="5" height="81" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1308" y="74" width="17" height="71" rx="3" fill="#8a5a2a"/>
+          <rect x="1310" y="64" width="13" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1308" y="74" width="5" height="71" fill="#b0824f" opacity="0.4"/>
+          <rect x="1342" y="73" width="17" height="72" rx="3" fill="#7a2e2e"/>
+          <rect x="1344" y="63" width="13" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1342" y="73" width="5" height="72" fill="#a15252" opacity="0.4"/>
+          <rect x="1373" y="69" width="16" height="76" rx="3" fill="#7a2e2e"/>
+          <rect x="1375" y="59" width="12" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1373" y="69" width="5" height="76" fill="#a15252" opacity="0.4"/>
+          <rect x="1405" y="85" width="20" height="60" rx="3" fill="#3d6b4a"/>
+          <rect x="1407" y="75" width="16" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1405" y="85" width="6" height="60" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1437" y="74" width="18" height="71" rx="3" fill="#a3843a"/>
+          <rect x="1439" y="64" width="14" height="12" rx="2" fill="#7a6228"/>
+          <rect x="1437" y="74" width="6" height="71" fill="#c9a860" opacity="0.4"/>
+          <rect x="1471" y="71" width="22" height="74" rx="3" fill="#8a5a2a"/>
+          <rect x="1473" y="61" width="18" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1471" y="71" width="7" height="74" fill="#b0824f" opacity="0.4"/>
+          <rect x="1508" y="78" width="16" height="67" rx="3" fill="#8a5a2a"/>
+          <rect x="1510" y="68" width="12" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1508" y="78" width="5" height="67" fill="#b0824f" opacity="0.4"/>
+          <rect x="1540" y="82" width="20" height="63" rx="3" fill="#8a5a2a"/>
+          <rect x="1542" y="72" width="16" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1540" y="82" width="6" height="63" fill="#b0824f" opacity="0.4"/>
+        </g>
+        <g opacity="0.92">
+          <rect x="55" y="104" width="20" height="76" rx="3" fill="#7a2e2e"/>
+          <rect x="57" y="94" width="16" height="12" rx="2" fill="#5c2222"/>
+          <rect x="55" y="104" width="6" height="76" fill="#a15252" opacity="0.4"/>
+          <rect x="89" y="108" width="17" height="72" rx="3" fill="#8a5a2a"/>
+          <rect x="91" y="98" width="13" height="12" rx="2" fill="#6b4520"/>
+          <rect x="89" y="108" width="5" height="72" fill="#b0824f" opacity="0.4"/>
+          <rect x="126" y="113" width="16" height="67" rx="3" fill="#3d6b4a"/>
+          <rect x="128" y="103" width="12" height="12" rx="2" fill="#2e5138"/>
+          <rect x="126" y="113" width="5" height="67" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="159" y="115" width="22" height="65" rx="3" fill="#3d6b4a"/>
+          <rect x="161" y="105" width="18" height="12" rx="2" fill="#2e5138"/>
+          <rect x="159" y="115" width="7" height="65" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="196" y="102" width="19" height="78" rx="3" fill="#7a2e2e"/>
+          <rect x="198" y="92" width="15" height="12" rx="2" fill="#5c2222"/>
+          <rect x="196" y="102" width="6" height="78" fill="#a15252" opacity="0.4"/>
+          <rect x="234" y="118" width="18" height="62" rx="3" fill="#3d5a86"/>
+          <rect x="236" y="108" width="14" height="12" rx="2" fill="#2c4363"/>
+          <rect x="234" y="118" width="6" height="62" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="271" y="115" width="16" height="65" rx="3" fill="#a3843a"/>
+          <rect x="273" y="105" width="12" height="12" rx="2" fill="#7a6228"/>
+          <rect x="271" y="115" width="5" height="65" fill="#c9a860" opacity="0.4"/>
+          <rect x="305" y="117" width="18" height="63" rx="3" fill="#a3843a"/>
+          <rect x="307" y="107" width="14" height="12" rx="2" fill="#7a6228"/>
+          <rect x="305" y="117" width="6" height="63" fill="#c9a860" opacity="0.4"/>
+          <rect x="343" y="100" width="22" height="80" rx="3" fill="#3d6b4a"/>
+          <rect x="345" y="90" width="18" height="12" rx="2" fill="#2e5138"/>
+          <rect x="343" y="100" width="7" height="80" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="380" y="109" width="19" height="71" rx="3" fill="#3d6b4a"/>
+          <rect x="382" y="99" width="15" height="12" rx="2" fill="#2e5138"/>
+          <rect x="380" y="109" width="6" height="71" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="414" y="105" width="17" height="75" rx="3" fill="#7a2e2e"/>
+          <rect x="416" y="95" width="13" height="12" rx="2" fill="#5c2222"/>
+          <rect x="414" y="105" width="5" height="75" fill="#a15252" opacity="0.4"/>
+          <rect x="450" y="112" width="21" height="68" rx="3" fill="#8a5a2a"/>
+          <rect x="452" y="102" width="17" height="12" rx="2" fill="#6b4520"/>
+          <rect x="450" y="112" width="7" height="68" fill="#b0824f" opacity="0.4"/>
+          <rect x="486" y="119" width="21" height="61" rx="3" fill="#3d6b4a"/>
+          <rect x="488" y="109" width="17" height="12" rx="2" fill="#2e5138"/>
+          <rect x="486" y="119" width="7" height="61" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="525" y="97" width="21" height="83" rx="3" fill="#3d6b4a"/>
+          <rect x="527" y="87" width="17" height="12" rx="2" fill="#2e5138"/>
+          <rect x="525" y="97" width="7" height="83" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="563" y="105" width="21" height="75" rx="3" fill="#3d5a86"/>
+          <rect x="565" y="95" width="17" height="12" rx="2" fill="#2c4363"/>
+          <rect x="563" y="105" width="7" height="75" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="603" y="95" width="20" height="85" rx="3" fill="#a3843a"/>
+          <rect x="605" y="85" width="16" height="12" rx="2" fill="#7a6228"/>
+          <rect x="603" y="95" width="6" height="85" fill="#c9a860" opacity="0.4"/>
+          <rect x="638" y="105" width="19" height="75" rx="3" fill="#8a5a2a"/>
+          <rect x="640" y="95" width="15" height="12" rx="2" fill="#6b4520"/>
+          <rect x="638" y="105" width="6" height="75" fill="#b0824f" opacity="0.4"/>
+          <rect x="676" y="97" width="16" height="83" rx="3" fill="#a3843a"/>
+          <rect x="678" y="87" width="12" height="12" rx="2" fill="#7a6228"/>
+          <rect x="676" y="97" width="5" height="83" fill="#c9a860" opacity="0.4"/>
+          <rect x="713" y="120" width="17" height="60" rx="3" fill="#8a5a2a"/>
+          <rect x="715" y="110" width="13" height="12" rx="2" fill="#6b4520"/>
+          <rect x="713" y="120" width="5" height="60" fill="#b0824f" opacity="0.4"/>
+          <rect x="746" y="96" width="20" height="84" rx="3" fill="#a3843a"/>
+          <rect x="748" y="86" width="16" height="12" rx="2" fill="#7a6228"/>
+          <rect x="746" y="96" width="6" height="84" fill="#c9a860" opacity="0.4"/>
+          <rect x="783" y="102" width="17" height="78" rx="3" fill="#3d5a86"/>
+          <rect x="785" y="92" width="13" height="12" rx="2" fill="#2c4363"/>
+          <rect x="783" y="102" width="5" height="78" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="822" y="109" width="18" height="71" rx="3" fill="#3d6b4a"/>
+          <rect x="824" y="99" width="14" height="12" rx="2" fill="#2e5138"/>
+          <rect x="822" y="109" width="6" height="71" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="856" y="101" width="21" height="79" rx="3" fill="#8a5a2a"/>
+          <rect x="858" y="91" width="17" height="12" rx="2" fill="#6b4520"/>
+          <rect x="856" y="101" width="7" height="79" fill="#b0824f" opacity="0.4"/>
+          <rect x="889" y="96" width="16" height="84" rx="3" fill="#7a2e2e"/>
+          <rect x="891" y="86" width="12" height="12" rx="2" fill="#5c2222"/>
+          <rect x="889" y="96" width="5" height="84" fill="#a15252" opacity="0.4"/>
+          <rect x="929" y="116" width="17" height="64" rx="3" fill="#3d6b4a"/>
+          <rect x="931" y="106" width="13" height="12" rx="2" fill="#2e5138"/>
+          <rect x="929" y="116" width="5" height="64" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="962" y="100" width="18" height="80" rx="3" fill="#a3843a"/>
+          <rect x="964" y="90" width="14" height="12" rx="2" fill="#7a6228"/>
+          <rect x="962" y="100" width="6" height="80" fill="#c9a860" opacity="0.4"/>
+          <rect x="996" y="118" width="16" height="62" rx="3" fill="#3d5a86"/>
+          <rect x="998" y="108" width="12" height="12" rx="2" fill="#2c4363"/>
+          <rect x="996" y="118" width="5" height="62" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1035" y="115" width="21" height="65" rx="3" fill="#3d5a86"/>
+          <rect x="1037" y="105" width="17" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1035" y="115" width="7" height="65" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1071" y="112" width="19" height="68" rx="3" fill="#3d6b4a"/>
+          <rect x="1073" y="102" width="15" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1071" y="112" width="6" height="68" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1108" y="104" width="22" height="76" rx="3" fill="#3d6b4a"/>
+          <rect x="1110" y="94" width="18" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1108" y="104" width="7" height="76" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1146" y="95" width="19" height="85" rx="3" fill="#a3843a"/>
+          <rect x="1148" y="85" width="15" height="12" rx="2" fill="#7a6228"/>
+          <rect x="1146" y="95" width="6" height="85" fill="#c9a860" opacity="0.4"/>
+          <rect x="1180" y="105" width="18" height="75" rx="3" fill="#3d5a86"/>
+          <rect x="1182" y="95" width="14" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1180" y="105" width="6" height="75" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1219" y="111" width="20" height="69" rx="3" fill="#7a2e2e"/>
+          <rect x="1221" y="101" width="16" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1219" y="111" width="6" height="69" fill="#a15252" opacity="0.4"/>
+          <rect x="1259" y="110" width="18" height="70" rx="3" fill="#3d6b4a"/>
+          <rect x="1261" y="100" width="14" height="12" rx="2" fill="#2e5138"/>
+          <rect x="1259" y="110" width="6" height="70" fill="#5c8f6c" opacity="0.4"/>
+          <rect x="1294" y="99" width="17" height="81" rx="3" fill="#8a5a2a"/>
+          <rect x="1296" y="89" width="13" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1294" y="99" width="5" height="81" fill="#b0824f" opacity="0.4"/>
+          <rect x="1328" y="108" width="21" height="72" rx="3" fill="#7a2e2e"/>
+          <rect x="1330" y="98" width="17" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1328" y="108" width="7" height="72" fill="#a15252" opacity="0.4"/>
+          <rect x="1366" y="118" width="18" height="62" rx="3" fill="#7a2e2e"/>
+          <rect x="1368" y="108" width="14" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1366" y="118" width="6" height="62" fill="#a15252" opacity="0.4"/>
+          <rect x="1401" y="97" width="20" height="83" rx="3" fill="#3d5a86"/>
+          <rect x="1403" y="87" width="16" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1401" y="97" width="6" height="83" fill="#5f7ea8" opacity="0.4"/>
+          <rect x="1439" y="119" width="21" height="61" rx="3" fill="#8a5a2a"/>
+          <rect x="1441" y="109" width="17" height="12" rx="2" fill="#6b4520"/>
+          <rect x="1439" y="119" width="7" height="61" fill="#b0824f" opacity="0.4"/>
+          <rect x="1475" y="105" width="16" height="75" rx="3" fill="#a3843a"/>
+          <rect x="1477" y="95" width="12" height="12" rx="2" fill="#7a6228"/>
+          <rect x="1475" y="105" width="5" height="75" fill="#c9a860" opacity="0.4"/>
+          <rect x="1512" y="98" width="17" height="82" rx="3" fill="#7a2e2e"/>
+          <rect x="1514" y="88" width="13" height="12" rx="2" fill="#5c2222"/>
+          <rect x="1512" y="98" width="5" height="82" fill="#a15252" opacity="0.4"/>
+          <rect x="1552" y="116" width="17" height="64" rx="3" fill="#3d5a86"/>
+          <rect x="1554" y="106" width="13" height="12" rx="2" fill="#2c4363"/>
+          <rect x="1552" y="116" width="5" height="64" fill="#5f7ea8" opacity="0.4"/>
+        </g>
+
+        <line x1="240" y1="0" x2="240" y2="90" stroke="#3a2c1c" stroke-width="3"/>
+        <circle cx="240" cy="145" r="85" fill="url(#lampGlow)"/>
+        <ellipse cx="240" cy="100" rx="32" ry="19" fill="#241a10" stroke="#5a4530" stroke-width="2"/>
+        <ellipse cx="240" cy="112" rx="19" ry="7" fill="#ffe3a3" opacity="0.85"/>
+
+        <line x1="640" y1="0" x2="640" y2="110" stroke="#3a2c1c" stroke-width="3"/>
+        <circle cx="640" cy="165" r="85" fill="url(#lampGlow)"/>
+        <ellipse cx="640" cy="120" rx="32" ry="19" fill="#241a10" stroke="#5a4530" stroke-width="2"/>
+        <ellipse cx="640" cy="132" rx="19" ry="7" fill="#ffe3a3" opacity="0.85"/>
+
+        <line x1="960" y1="0" x2="960" y2="100" stroke="#3a2c1c" stroke-width="3"/>
+        <circle cx="960" cy="155" r="85" fill="url(#lampGlow)"/>
+        <ellipse cx="960" cy="110" rx="32" ry="19" fill="#241a10" stroke="#5a4530" stroke-width="2"/>
+        <ellipse cx="960" cy="122" rx="19" ry="7" fill="#ffe3a3" opacity="0.85"/>
+
+        <line x1="1360" y1="0" x2="1360" y2="120" stroke="#3a2c1c" stroke-width="3"/>
+        <circle cx="1360" cy="175" r="85" fill="url(#lampGlow)"/>
+        <ellipse cx="1360" cy="130" rx="32" ry="19" fill="#241a10" stroke="#5a4530" stroke-width="2"/>
+        <ellipse cx="1360" cy="142" rx="19" ry="7" fill="#ffe3a3" opacity="0.85"/>
+
+
+        <rect x="0" y="410" width="1600" height="46" fill="url(#brassGrad)"/>
+        <rect x="0" y="412" width="1600" height="6" fill="#fff" opacity="0.35"/>
+        <rect x="0" y="452" width="1600" height="4" fill="#000" opacity="0.35"/>
+
+        <rect x="0" y="456" width="1600" height="60" fill="url(#woodTop)"/>
+        <rect x="0" y="456" width="1600" height="10" fill="#fff" opacity="0.06"/>
+
+        <rect x="0" y="516" width="1600" height="384" fill="url(#woodFront)"/>
+        <g opacity="0.18" stroke="#000" stroke-width="1">
+          <line x1="0" y1="560" x2="1600" y2="560"/>
+          <line x1="0" y1="620" x2="1600" y2="620"/>
+          <line x1="0" y1="700" x2="1600" y2="700"/>
+          <line x1="0" y1="790" x2="1600" y2="790"/>
+        </g>
+        <g opacity="0.05" stroke="#fff" stroke-width="1">
+          <line x1="0" y1="540" x2="1600" y2="540"/>
+          <line x1="0" y1="660" x2="1600" y2="660"/>
+          <line x1="0" y1="750" x2="1600" y2="750"/>
+        </g>
+
+        <!-- барные стулья перед стойкой (высокие, с подставкой для ног) -->
+        <g opacity="0.92">
+          <g>
+            <ellipse cx="175" cy="520" rx="58" ry="19" fill="#3a2c1c" stroke="#5a4530" stroke-width="3"/>
+            <ellipse cx="175" cy="514" rx="58" ry="19" fill="#4a3520"/>
+            <rect x="210" y="534" width="9" height="348" fill="#1c1712"/>
+            <rect x="132" y="534" width="9" height="348" fill="#1c1712"/>
+            <line x1="132" y1="740" x2="219" y2="740" stroke="#2a241d" stroke-width="7"/>
+          </g>
+          <g>
+            <ellipse cx="525" cy="520" rx="58" ry="19" fill="#3a2c1c" stroke="#5a4530" stroke-width="3"/>
+            <ellipse cx="525" cy="514" rx="58" ry="19" fill="#4a3520"/>
+            <rect x="560" y="534" width="9" height="348" fill="#1c1712"/>
+            <rect x="482" y="534" width="9" height="348" fill="#1c1712"/>
+            <line x1="482" y1="740" x2="569" y2="740" stroke="#2a241d" stroke-width="7"/>
+          </g>
+          <g>
+            <ellipse cx="1005" cy="520" rx="58" ry="19" fill="#3a2c1c" stroke="#5a4530" stroke-width="3"/>
+            <ellipse cx="1005" cy="514" rx="58" ry="19" fill="#4a3520"/>
+            <rect x="1040" y="534" width="9" height="348" fill="#1c1712"/>
+            <rect x="962" y="534" width="9" height="348" fill="#1c1712"/>
+            <line x1="962" y1="740" x2="1049" y2="740" stroke="#2a241d" stroke-width="7"/>
+          </g>
+          <g>
+            <ellipse cx="1355" cy="520" rx="58" ry="19" fill="#3a2c1c" stroke="#5a4530" stroke-width="3"/>
+            <ellipse cx="1355" cy="514" rx="58" ry="19" fill="#4a3520"/>
+            <rect x="1390" y="534" width="9" height="348" fill="#1c1712"/>
+            <rect x="1312" y="534" width="9" height="348" fill="#1c1712"/>
+            <line x1="1312" y1="740" x2="1399" y2="740" stroke="#2a241d" stroke-width="7"/>
+          </g>
+        </g>
+
+        <rect x="0" y="0" width="1600" height="900" fill="url(#vignette)"/>
+      </svg>
+
+      <a href="menu.html#beer" class="hotspot hotspot-beer" style="top:50.7%; left:16%;">
+        <span class="hotspot-icon">
+          <svg width="46" height="86" viewBox="0 0 46 86">
+            <rect x="15" y="0" width="16" height="7" rx="2" fill="#2a241d"/>
+            <rect x="20" y="7" width="6" height="7" fill="#2a241d"/>
+            <rect class="pour-stream" x="21.4" y="14" width="3.2" height="16" fill="#f2e0a0"/>
+            <path class="glass-outline" d="M13 30 L33 30 L29 82 L17 82 Z" fill="none" stroke="#f0e9df" stroke-width="2"/>
+            <clipPath id="glassClipBeer"><path d="M13 30 L33 30 L29 82 L17 82 Z"/></clipPath>
+            <rect class="pour-fill" x="13" y="33" width="20" height="49" fill="#e8c96a" clip-path="url(#glassClipBeer)"/>
+            <ellipse class="pour-foam" cx="23" cy="31" rx="10" ry="3.2" fill="#f5ecc8"/>
+          </svg>
+        </span>
+        <span class="hotspot-label">Пивное меню</span>
+      </a>
+
+      <a href="menu.html#kitchen" class="hotspot hotspot-kitchen" style="top:50.7%; left:44%;">
+        <span class="hotspot-icon">
+          <svg width="82" height="66" viewBox="0 0 82 66">
+            <g class="steam-wisp steam-1">
+              <path d="M27 24 Q23 16 27 10 Q31 4 27 -3" stroke="#f0e9df" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </g>
+            <g class="steam-wisp steam-2">
+              <path d="M41 24 Q37 15 41 9 Q45 3 41 -5" stroke="#f0e9df" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </g>
+            <g class="steam-wisp steam-3">
+              <path d="M55 24 Q51 16 55 10 Q59 4 55 -3" stroke="#f0e9df" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            </g>
+            <ellipse cx="41" cy="50" rx="38" ry="12" fill="#d8cdb8"/>
+            <ellipse cx="41" cy="45" rx="38" ry="12" fill="#f0e6d2"/>
+            <ellipse cx="41" cy="45" rx="26" ry="8" fill="#e0d4bc"/>
+            <ellipse cx="30" cy="42" rx="8" ry="5.5" fill="#f5ecc8"/>
+            <circle cx="30" cy="42" r="2.8" fill="#e8b84a"/>
+            <rect x="41" y="38" width="19" height="6" rx="3" fill="#a15a3a"/>
+            <rect x="41" y="46" width="19" height="6" rx="3" fill="#8a4a2e"/>
+          </svg>
+        </span>
+        <span class="hotspot-label">Меню кухни</span>
+      </a>
+
+      <a href="menu.html#bar" class="hotspot hotspot-bar" style="top:50.7%; left:70%;">
+        <span class="hotspot-icon">
+          <svg width="78" height="70" viewBox="0 0 78 70">
+            <path class="whiskey-stream" d="M44 13 L55 39" fill="none" stroke="#c9834a" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M46 40 L64 40 L61 66 L49 66 Z" fill="none" stroke="#f0e9df" stroke-width="2"/>
+            <clipPath id="glassClipBar"><path d="M46 40 L64 40 L61 66 L49 66 Z"/></clipPath>
+            <rect class="whiskey-fill" x="46" y="48" width="18" height="18" fill="#c9834a" clip-path="url(#glassClipBar)"/>
+            <g class="bottle-group">
+              <rect x="10" y="4" width="7" height="11" rx="1.5" fill="#2a241d"/>
+              <path d="M8 15 h11 l3 9 v22 a3.5 3.5 0 01-3.5 3.5 h-10 a3.5 3.5 0 01-3.5-3.5 v-22 z" fill="#3a2a18" stroke="#5a4530" stroke-width="1.2"/>
+              <rect x="6" y="30" width="17" height="13" fill="#c9a24b" opacity="0.9"/>
+            </g>
+          </svg>
+        </span>
+        <span class="hotspot-label">Барное меню</span>
+      </a>
+
+      <a href="sport.html" class="hotspot hotspot-events" style="top:50.7%; left:88%;">
+        <span class="hotspot-icon">
+          <svg width="66" height="88" viewBox="0 0 66 88">
+            <path d="M33 4 L58 34 L8 34 Z" fill="#e8dcc0" stroke="#2a241d" stroke-width="1.5"/>
+            <path d="M33 4 L33 34" stroke="#2a241d" stroke-width="1" opacity="0.3"/>
+            <path d="M33 4 L20 34 L8 34 Z" fill="#d4c6a4"/>
+            <path d="M8 34 L8 82 L58 82 L58 34" fill="#f0e6d2" stroke="#2a241d" stroke-width="1.5"/>
+            <path d="M8 34 L33 34 L33 82 L8 82 Z" fill="#000" opacity="0.04"/>
+            <path d="M22 6 L33 4 L33 18 Z" fill="#7a2e2e"/>
+            <line class="tent-line tent-line-1" x1="15" y1="46" x2="51" y2="46" stroke="#7a2e2e" stroke-width="2.4" stroke-linecap="round"/>
+            <line class="tent-line tent-line-2" x1="15" y1="58" x2="46" y2="58" stroke="#5a4f3d" stroke-width="1.8" stroke-linecap="round"/>
+            <line class="tent-line tent-line-3" x1="15" y1="67" x2="41" y2="67" stroke="#5a4f3d" stroke-width="1.8" stroke-linecap="round"/>
+            <line class="tent-line tent-line-4" x1="15" y1="76" x2="37" y2="76" stroke="#5a4f3d" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="hotspot-label">Афиша и события</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- Лента "Хиты паба" -->
+  <section class="highlights">
+    <div class="highlights-head">
+      <div class="highlights-eyebrow">Хиты паба</div>
+      <h2>То, ради чего приходят</h2>
+    </div>
+    <div class="hits-strip">
+      <a href="menu.html#kitchen" class="hit-card" data-reveal style="background-image:url('images/menu/kitchen/syrnye-shariki.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="16" height="14" viewBox="0 0 30 26"><ellipse cx="15" cy="18" rx="14" ry="5" fill="#d8cdb8"/><ellipse cx="15" cy="15" rx="14" ry="5" fill="#f0e6d2"/><ellipse cx="15" cy="15" rx="9.5" ry="3.2" fill="#e0d4bc"/><ellipse cx="11" cy="13.5" rx="3" ry="2" fill="#f5ecc8"/><circle cx="11" cy="13.5" r="1" fill="#e8b84a"/><rect x="16" y="12" width="7" height="2.3" rx="1.1" fill="#a15a3a"/><rect x="16" y="15" width="7" height="2.3" rx="1.1" fill="#8a4a2e"/></svg>
+          Кухня
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Сырные шарики</span>
+          <span class="hit-price">420 ₽</span>
+        </div>
+      </a>
+      <a href="menu.html#beer" class="hit-card" data-reveal style="background-image:url('images/menu/beer/lager.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="12" height="17" viewBox="0 0 24 34"><rect x="8" y="0" width="8" height="4" rx="1.2" fill="#2a241d"/><rect x="10.5" y="4" width="3" height="4" fill="#2a241d"/><path d="M7 10 L17 10 L15 32 L9 32 Z" fill="none" stroke="#f0e9df" stroke-width="1.4"/><path d="M7.5 13 L16.5 13 L15 32 L9 32 Z" fill="#e8c96a"/><ellipse cx="12" cy="11" rx="5" ry="1.6" fill="#f5ecc8"/></svg>
+          Пиво
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Papa's Lager</span>
+          <span class="hit-price">330 ₽</span>
+        </div>
+      </a>
+      <a href="menu.html#kitchen" class="hit-card" data-reveal style="background-image:url('images/menu/kitchen/burger-govyadina.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="16" height="14" viewBox="0 0 30 26"><ellipse cx="15" cy="18" rx="14" ry="5" fill="#d8cdb8"/><ellipse cx="15" cy="15" rx="14" ry="5" fill="#f0e6d2"/><ellipse cx="15" cy="15" rx="9.5" ry="3.2" fill="#e0d4bc"/><ellipse cx="11" cy="13.5" rx="3" ry="2" fill="#f5ecc8"/><circle cx="11" cy="13.5" r="1" fill="#e8b84a"/><rect x="16" y="12" width="7" height="2.3" rx="1.1" fill="#a15a3a"/><rect x="16" y="15" width="7" height="2.3" rx="1.1" fill="#8a4a2e"/></svg>
+          Кухня
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Бургер с говядиной</span>
+          <span class="hit-price">720 ₽</span>
+        </div>
+      </a>
+      <a href="menu.html#bar" class="hit-card" data-reveal style="background-image:url('images/menu/bar/jameson.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="14" height="15" viewBox="0 0 28 30"><path d="M4 12 l11 0 3 8 v6 a3 3 0 01-3 3 h-9 a3 3 0 01-3-3 v-6 z" fill="#3a2a18" stroke="#5a4530" stroke-width="1"/><rect x="2" y="24" width="15" height="5" fill="#c9a24b" opacity="0.9"/><rect x="6" y="4" width="6" height="9" rx="1.3" fill="#2a241d"/><path d="M20 14 L26 14 L24.5 26 L21.5 26 Z" fill="none" stroke="#f0e9df" stroke-width="1.4"/><path d="M20.5 19 L25.5 19 L24.5 26 L21.5 26 Z" fill="#c9834a"/></svg>
+          Бар
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Jameson</span>
+          <span class="hit-price">490 ₽</span>
+        </div>
+      </a>
+      <a href="menu.html#kitchen" class="hit-card" data-reveal style="background-image:url('images/menu/kitchen/shtrudel.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="16" height="14" viewBox="0 0 30 26"><ellipse cx="15" cy="18" rx="14" ry="5" fill="#d8cdb8"/><ellipse cx="15" cy="15" rx="14" ry="5" fill="#f0e6d2"/><ellipse cx="15" cy="15" rx="9.5" ry="3.2" fill="#e0d4bc"/><ellipse cx="11" cy="13.5" rx="3" ry="2" fill="#f5ecc8"/><circle cx="11" cy="13.5" r="1" fill="#e8b84a"/><rect x="16" y="12" width="7" height="2.3" rx="1.1" fill="#a15a3a"/><rect x="16" y="15" width="7" height="2.3" rx="1.1" fill="#8a4a2e"/></svg>
+          Кухня
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Штрудель</span>
+          <span class="hit-price">340 ₽</span>
+        </div>
+      </a>
+      <a href="menu.html#kitchen" class="hit-card" data-reveal style="background-image:url('images/menu/kitchen/steik-salat.jpg')">
+        <div class="hit-card-overlay"></div>
+        <div class="hit-card-category">
+          <svg width="16" height="14" viewBox="0 0 30 26"><ellipse cx="15" cy="18" rx="14" ry="5" fill="#d8cdb8"/><ellipse cx="15" cy="15" rx="14" ry="5" fill="#f0e6d2"/><ellipse cx="15" cy="15" rx="9.5" ry="3.2" fill="#e0d4bc"/><ellipse cx="11" cy="13.5" rx="3" ry="2" fill="#f5ecc8"/><circle cx="11" cy="13.5" r="1" fill="#e8b84a"/><rect x="16" y="12" width="7" height="2.3" rx="1.1" fill="#a15a3a"/><rect x="16" y="15" width="7" height="2.3" rx="1.1" fill="#8a4a2e"/></svg>
+          Кухня
+        </div>
+        <div class="hit-card-bottom">
+          <span class="hit-name">Салат со стейком</span>
+          <span class="hit-price">640 ₽</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- Блок "Сегодня в пабе" -->
+  <section class="today-block">
+    <div class="today-card" data-reveal>
+      <div class="today-left">
+        <div class="today-eyebrow"><span class="today-dot"></span><span id="todayLabel">Сегодня в пабе</span></div>
+        <h3 class="today-match" id="todayMatchTeams">Загружаем афишу…</h3>
+        <p class="today-meta" id="todayMatchMeta">&nbsp;</p>
+        <a href="sport.html" class="btn btn-outline">Вся афиша трансляций</a>
+      </div>
+      <div class="today-right">
+        <p>Каждый вечер в пабе — что-то своё: футбол на большом экране, живая музыка по выходным, а также тематические дискотеки «O' Roman's Party»!.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- Бегущая строка -->
+
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+      <span>Спортивные трансляции</span><span>Живая музыка</span><span>Вечеринки</span><span>Вкусная еда</span>
+    </div>
+  </div>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <section class="courtyard" id="courtyard">
+    <div>
+      <div class="courtyard-eyebrow">Внутренний дворик</div>
+      <h2>Летнее кафе в&nbsp;дворике-колодце </h2>
+      <p>С мая по октябрь двор-колодец паба превращается в уютное летнее кафе — столики под открытым небом в самом центре Энгельса.</p>
+      <div class="courtyard-season">Сезон: май — октябрь
+        <span class="open-status" id="seasonStatus"><span class="status-dot"></span><span class="status-text">—</span></span>
+      </div>
+    </div>
+    <div class="courtyard-img" id="courtyardImg">
+      <img src="images/about/courtyard.jpg" alt="Летний дворик паба" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="footer-logo-block">
+        <img src="images/logo.svg" alt="O'Roman's Pub" class="footer-logo-img">
+        <div>
+          <div class="footer-logo"><span>O'</span> Roman<span>'s</span> Pub</div> 
+          <span class="footer-logo-address">ул. Тельмана, 2</span>
+        </div>
+      </a>
+      <p class="footer-desc">Культовый ирландский паб в центре Энгельса. Открыты с 2004 года. Европейская кухня, крафтовое пиво, живая атмосфера.</p>
+      <div class="footer-social">
+        <a href=" https://#" aria-label="VK">VK</a>
+        <a href=" https://#" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="sport.html">Спортивные трансляции</a></li>
+        <li><a href="loyalty.html">Клуб друзей</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">VK</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">Telegram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Часы работы</h4>
+      <ul style="color: var(--text-dim); font-size: 14px;">
+        <li>пн–чт: 16:00–02:00</li>
+        <li>пт–сб: 14:00–03:00</li>
+        <li>вс: 14:00–02:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© O'Roman's Pub, Энгельс</span>
+    
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

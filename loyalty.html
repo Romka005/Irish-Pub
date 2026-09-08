@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Клуб Друзей — O'Roman's Pub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="mobile-nav-fab">
+  <button class="mobile-nav-fab-btn" aria-label="Меню навигации">
+    <svg class="mobile-nav-fab-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    <svg class="mobile-nav-fab-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    <span class="mobile-nav-fab-btn-text">Меню</span>
+  </button>
+  <nav class="mobile-nav-fab-menu">
+    <a href="menu.html">Меню</a>
+    <a href="about.html">О нас</a>
+    <a href="sport.html">Спортивные трансляции</a>
+    <a href="loyalty.html" class="active">Клуб друзей</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</div>
+
+<body>
+<div class="page-haze"></div> <!-- световая дымка -->
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="images/logo.svg" alt="O'Roman's Pub" class="header-logo-img">
+      <div class="logo-text">
+        <a href="index.html" class="logo-name"><span>O'</span> Roman<span>'s</span> Pub</a>
+        <span class="logo-address">ул. Тельмана, 2</span>
+      </div>
+    </div>
+    <nav>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="sport.html">Спортивные трансляции</a>
+      <a href="loyalty.html">Клуб друзей</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+70000000000" class="btn restoplace-click-open">Забронировать стол</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="loyalty-hero">
+    <div class="loyalty-hero-eyebrow">Программа лояльности</div>
+    <h1>Клуб Друзей</h1>
+    <p>Единая бонусная программа, которая действует не только в пабе, но и в трёх других заведениях Энгельса — копите баллы в одном месте, тратьте в любом.</p>
+  </section>
+
+  <!-- Три карточки -->
+  <section class="facts">
+    <div class="fact-card" data-reveal>
+      <div class="fact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin:0 auto;"><path d="M6 2h12v20l-2.5-1.5L13 22l-2.5-1.5L8 22l-2-1.5V2z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div>
+      <div class="fact-title">До 50% чека</div>
+      <div class="fact-desc">Максимум, который можно закрыть накопленными баллами</div>
+    </div>
+    <div class="fact-card" data-reveal>
+      <div class="fact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin:0 auto;"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8.5 15.5c0-1.7 1.5-2.5 3.5-2.5s3.5.8 3.5 2.5"/><path d="M7 5h1M7 19h10"/></svg></div>
+      <div class="fact-title">16+</div>
+      <div class="fact-desc">Возраст участия в программе</div>
+    </div>
+    <div class="fact-card" data-reveal>
+      <div class="fact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin:0 auto;"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+      <div class="fact-title">Мобильное приложение</div>
+      <div class="fact-desc">Карта клуба всегда под рукой, ничего носить с собой не нужно</div>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- Заведения-партнёры -->
+  <section class="partners">
+    <div class="partners-head">
+      <div class="partners-head-eyebrow">Одна карта — четыре заведения</div>
+      <h2>Где действуют бонусы</h2>
+      <p>Клуб Друзей объединяет несколько заведений Энгельса — баллы копятся и тратятся в любом из них.</p>
+    </div>
+    <div class="partners-grid">
+      <div class="partner-card current" data-reveal>
+        <div class="partner-name">O'Roman's Pub</div>
+        <div class="partner-type">Ирландский паб</div>
+        <div class="partner-badge">Вы здесь</div>
+      </div>
+      <div class="partner-card" data-reveal>
+        <div class="partner-name">Кофе`ОК</div>
+        <div class="partner-type">Сеть городских кафе</div>
+      </div>
+      <div class="partner-card" data-reveal>
+        <div class="partner-name">Бриошь</div>
+        <div class="partner-type">Французская кондитерская</div>
+      </div>
+      <div class="partner-card" data-reveal>
+        <div class="partner-name">Танцпол</div>
+        <div class="partner-type">Диско-бар</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- инструкция -->
+  <section class="how">
+    <div class="how-head">
+      <div class="how-head-eyebrow">Это просто</div>
+      <h2>Как вступить</h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-connector"></div>
+      <div class="how-step" data-reveal>
+        <div class="how-step-num">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          <span class="how-step-badge">1</span>
+        </div>
+        <h4>Установите приложение</h4>
+        <p>Скачайте карту клуба на телефон — она заменит физическую карту</p>
+      </div>
+      <div class="how-step" data-reveal>
+        <div class="how-step-num">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          <span class="how-step-badge">2</span>
+        </div>
+        <h4>Копите баллы</h4>
+        <p>С каждого визита в пабе или у партнёров клуба начисляются бонусы</p>
+      </div>
+      <div class="how-step" data-reveal>
+        <div class="how-step-num">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12V8H6a2 2 0 010-4h12v4M4 6v12a2 2 0 002 2h14v-4M18 12a2 2 0 000 4h4v-4h-4z"/></svg>
+          <span class="how-step-badge">3</span>
+        </div>
+        <h4>Оплачивайте баллами</h4>
+        <p>Закрывайте до 50% чека накопленными бонусами в любом из заведений</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><span class="diamond"></span></div>
+
+  <!-- текст + мокап -->
+  <section class="loyalty-cta">
+    <div class="loyalty-cta-text">
+      <h2>Вступить в Клуб Друзей</h2>
+      <p>Установите приложение и начните копить бонусы уже сегодня</p>
+      <p class="loyalty-note">С действующими правилами бонусной программы можно ознакомиться в официальном <a href="https://#">документе</a>. <br>Обратная связь и клиентская поддержка — <a href="mailto:#">info@O'Roman's Pub.ru</a></p>
+    </div>
+    <div class="phone-mockup">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <img src="images/kd-app-icon.png" alt="Клуб Друзей — иконка приложения" class="app-icon">
+          <div class="app-name">Клуб Друзей</div>
+          <div class="app-sub">Единая карта на 4 заведения</div>
+          <a href="https://irishpapaspub.ru/app/" target="_blank" rel="noopener" class="app-open-btn">Открыть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-bottom"></div>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="footer-logo-block">
+        <img src="images/logo.svg" alt="O'Roman's Pub" class="footer-logo-img">
+        <div>
+          <div class="footer-logo"><span>O'</span> Roman<span>'s</span> Pub</div>
+          <span class="footer-logo-address">ул. Тельмана, 2</span>
+        </div>
+      </a>
+      <p class="footer-desc">Культовый ирландский паб в центре Энгельса. Открыты с 2004 года. Европейская кухня, крафтовое пиво, живая атмосфера.</p>
+      <div class="footer-social">
+        <a href=" https://#" aria-label="VK">VK</a>
+        <a href=" https://#" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="sport.html">Спортивные трансляции</a></li>
+        <li><a href="loyalty.html">Клуб друзей</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">VK</a></li>
+        <li><a href=" https://#" target="_blank" rel="noopener">Telegram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Часы работы</h4>
+      <ul style="color: var(--text-dim); font-size: 14px;">
+        <li>пн–чт: 16:00–02:00</li>
+        <li>пт–сб: 14:00–03:00</li>
+        <li>вс: 14:00–02:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© O'Roman's Pub, Энгельс</span>
+    
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
